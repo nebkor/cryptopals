@@ -1,6 +1,6 @@
 #lang racket
 
-(provide hex->base64 hex->bytes)
+(provide hex->bytes hex->base64)
 
 (require net/base64)
 
@@ -23,4 +23,4 @@
   (iter (string->list s) '()))
 
 (define (hex->base64 s)
-  (base64-encode (hex->bytes s)))
+  (base64-encode (hex->bytes s) #""))

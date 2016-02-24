@@ -36,7 +36,7 @@
 
      ;; challenge 2
      (test-equal? "xor"
-                  (xor c2-input c2-test-val)
+                  (cp-xor c2-input c2-test-val)
                   c2-output)))
 
   (run-tests suite))
